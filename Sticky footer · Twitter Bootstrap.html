@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)http://twitter.github.com/bootstrap/examples/sticky-footer-navbar.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Sticky footer · Twitter Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- CSS -->
+    <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+
+      /* Sticky footer styles
+      -------------------------------------------------- */
+
+      html,
+      body {
+        height: 100%;
+        /* The html and body elements cannot have any padding or margin. */
+      }
+
+      /* Wrapper for page content to push down footer */
+      #wrap {
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        /* Negative indent footer by it's height */
+        margin: 0 auto -60px;
+      }
+
+      /* Set the fixed height of the footer here */
+      #push,
+      #footer {
+        height: 60px;
+      }
+      #footer {
+        background-color: #f5f5f5;
+      }
+
+      /* Lastly, apply responsive CSS fixes as necessary */
+      @media (max-width: 767px) {
+        #footer {
+          margin-left: -20px;
+          margin-right: -20px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+
+      .center {
+          float: none;
+          margin: 0 auto;
+          text-align: center;
+      }
+
+
+      /* Custom page CSS
+      -------------------------------------------------- */
+      /* Not required for template or sticky footer method. */
+
+      #wrap > .container {
+        padding-top: 60px;
+      }
+      .container .credit {
+        margin: 20px 0;
+      }
+
+      code {
+        font-size: 80%;
+      }
+
+    </style>
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/docs.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css"
+    rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+  <style type="text/css"></style></head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar" data-twttr-rendered="true">
+
+      <!-- Fixed navbar -->
+      <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="#">Kuali Coeus</a>
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li class="nav-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </div>
+      </div>
+      <br/>
+      <br/>
+      
+      <!-- Begin page content -->
+      <header class="jumbotron subhead affix" style="width: 100%" id="overview">
+      <div style="width: 100%; background: url(./assets/img/masthead1.png); padding: 15px 15px 15px 15px">
+        <h1>Travel Account Lookup</h1>
+      </div>
+      </header>
+    
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+    <!-- Part 1: Wrap all page content here -->
+    <div id="wrap">
+      <div class="container">
+          <div class="row">
+            <div class="span6 center">
+            <form class="form-horizontal">
+              <div class="control-group">
+                <label class="control-label" for="inputEmail">Travel Account Number</label>
+                <div class="controls">
+                  <input type="text" id="inputEmail" placeholder="Email">
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label" for="inputEmail">Account Name</label>
+                <div class="controls">
+                  <input type="text" id="inputEmail" placeholder="Email">
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label" for="inputEmail">Travel
+    Sub Account Number</label>
+                <div class="controls">
+                  <input type="text" id="inputEmail" placeholder="Email">
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label" for="inputEmail">Sub
+    Account Name</label>
+                <div class="controls">
+                  <input type="text" id="inputEmail" placeholder="Email">
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label" for="inputEmail">Date Created</label>
+                <div class="controls">
+                  <input type="text" id="inputEmail" placeholder="Email">
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label"
+    for="inputEmail">Subsidized Percent</label>
+                <div class="controls">
+                  <input type="text" id="inputEmail" placeholder="Email">
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label" for="inputEmail">Travel
+    Fiscal Officer Id</label>
+                <div class="controls">
+                  <input type="text" id="inputEmail" placeholder="Email">
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label"
+    for="inputPassword">Travel Account Type Code</label>
+                <div class="controls">
+                  <input type="password" id="inputPassword" placeholder="Password">
+                </div>
+              </div>
+              <div class="control-group">
+                <div class="controls">
+                  <label class="checkbox">
+                    <input type="checkbox"> Remember me
+                  </label>
+                  <button type="submit" class="btn">Sign in</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+<div class="span3 bs-docs-sidebar">
+        <ul class="nav nav-list bs-docs-sidenav affix-top">
+          <li><a href="#typography"><i class="icon-chevron-right"></i> Typography</a></li>
+          <li><a href="#code"><i class="icon-chevron-right"></i> Code</a></li>
+          <li><a href="#tables"><i class="icon-chevron-right"></i> Tables</a></li>
+          <li><a href="#forms"><i class="icon-chevron-right"></i> Forms</a></li>
+          <li><a href="#buttons"><i class="icon-chevron-right"></i> Buttons</a></li>
+          <li><a href="#images"><i class="icon-chevron-right"></i> Images</a></li>
+          <li><a href="#icons"><i class="icon-chevron-right"></i> Icons by Glyphicons</a></li>
+        </ul>
+      </div>
+      <div class="span12 lookup-results">
+        <table class="table table-hover table-bordered">
+          <tr>
+          <th>Travel Account Number</th>
+          <th>Account Name</th>
+          <th>Sub Account Number</th>
+          <th>Sub Account Name</th>
+          <th>Subsidized Percent</th>
+          <th>Date Created</th>
+          <th>Travel Fiscal Officer Id</th>
+          </tr>
+          <tr>
+          <td>Travel Account Number</td>
+          <td>Account Name</td>
+          <td>Sub Account Number</td>
+          <td>Sub Account Name</td>
+          <td>Subsidized Percent</td>
+          <td>Date Created</td>
+          <td>Travel Fiscal Officer Id</td>
+          </tr>
+          <tr>
+          <td>Travel Account Number</td>
+          <td>Account Name</td>
+          <td>Sub Account Number</td>
+          <td>Sub Account Name</td>
+          <td>Subsidized Percent</td>
+          <td>Date Created</td>
+          <td>Travel Fiscal Officer Id</td>
+          </tr>
+          <tr>
+          <td>Travel Account Number</td>
+          <td>Account Name</td>
+          <td>Sub Account Number</td>
+          <td>Sub Account Name</td>
+          <td>Subsidized Percent</td>
+          <td>Date Created</td>
+          <td>Travel Fiscal Officer Id</td>
+          </tr>
+          <tr>
+          <td>Travel Account Number</td>
+          <td>Account Name</td>
+          <td>Sub Account Number</td>
+          <td>Sub Account Name</td>
+          <td>Subsidized Percent</td>
+          <td>Date Created</td>
+          <td>Travel Fiscal Officer Id</td>
+          </tr>
+          <tr>
+          <td>Travel Account Number</td>
+          <td>Account Name</td>
+          <td>Sub Account Number</td>
+          <td>Sub Account Name</td>
+          <td>Subsidized Percent</td>
+          <td>Date Created</td>
+          <td>Travel Fiscal Officer Id</td>
+          </tr>
+          <tr>
+          <td>Travel Account Number</td>
+          <td>Account Name</td>
+          <td>Sub Account Number</td>
+          <td>Sub Account Name</td>
+          <td>Subsidized Percent</td>
+          <td>Date Created</td>
+          <td>Travel Fiscal Officer Id</td>
+          </tr>
+          <tr>
+          <td>Travel Account Number</td>
+          <td>Account Name</td>
+          <td>Sub Account Number</td>
+          <td>Sub Account Name</td>
+          <td>Subsidized Percent</td>
+          <td>Date Created</td>
+          <td>Travel Fiscal Officer Id</td>
+          </tr>
+          <tr>
+          <td>Travel Account Number</td>
+          <td>Account Name</td>
+          <td>Sub Account Number</td>
+          <td>Sub Account Name</td>
+          <td>Subsidized Percent</td>
+          <td>Date Created</td>
+          <td>Travel Fiscal Officer Id</td>
+          </tr>
+          <tr>
+          <td>Travel Account Number</td>
+          <td>Account Name</td>
+          <td>Sub Account Number</td>
+          <td>Sub Account Name</td>
+          <td>Subsidized Percent</td>
+          <td>Date Created</td>
+          <td>Travel Fiscal Officer Id</td>
+          </tr>
+          <tr>
+          <td>Travel Account Number</td>
+          <td>Account Name</td>
+          <td>Sub Account Number</td>
+          <td>Sub Account Name</td>
+          <td>Subsidized Percent</td>
+          <td>Date Created</td>
+          <td>Travel Fiscal Officer Id</td>
+          </tr>
+        </table>
+      </div>
+      </div>
+      </div>
+      
+    </div>
+    <br/>
+    <br/>
+    <br/>
+        
+    <div id="footer">
+    <div class="container">
+      <p class="muted credit"></p>
+    </div>
+    </div>
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src=".//jquery.js"></script>
+    <script src="./assets/bootstrap-transition.js"></script>
+    <script src="./assets/bootstrap-alert.js"></script>
+    <script src="./assets/bootstrap-modal.js"></script>
+    <script src="./assets/bootstrap-dropdown.js"></script>
+    <script src="./assets/bootstrap-scrollspy.js"></script>
+    <script src="./assets/bootstrap-tab.js"></script>
+    <script src="./assets/bootstrap-tooltip.js"></script>
+    <script src="./assets/bootstrap-popover.js"></script>
+    <script src="./assets/bootstrap-button.js"></script>
+    <script src="./assets/bootstrap-collapse.js"></script>
+    <script src="./assets/bootstrap-carousel.js"></script>
+    <script src="./assets/bootstrap-typeahead.js"></script>
+
+  
+
+</body></html>

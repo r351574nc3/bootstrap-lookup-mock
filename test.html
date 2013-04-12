@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)http://twitter.github.com/bootstrap/examples/sticky-footer-navbar.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Sticky footer · Twitter Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- CSS -->
+    <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+
+      /* Sticky footer styles
+      -------------------------------------------------- */
+
+      html,
+      body {
+        height: 100%;
+        /* The html and body elements cannot have any padding or margin. */
+      }
+
+      /* Wrapper for page content to push down footer */
+      #wrap {
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        /* Negative indent footer by it's height */
+        margin: 0 auto -60px;
+      }
+
+      /* Set the fixed height of the footer here */
+      #push,
+      #footer {
+        height: 60px;
+      }
+      #footer {
+        background-color: #f5f5f5;
+      }
+
+      /* Lastly, apply responsive CSS fixes as necessary */
+      @media (max-width: 767px) {
+        #footer {
+          margin-left: -20px;
+          margin-right: -20px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+
+      .center {
+          float: none;
+          margin: 0 auto;
+          text-align: center;
+      }
+
+
+      /* Custom page CSS
+      -------------------------------------------------- */
+      /* Not required for template or sticky footer method. */
+
+      #wrap > .container {
+        padding-top: 60px;
+      }
+      .container .credit {
+        margin: 20px 0;
+      }
+
+      code {
+        font-size: 80%;
+      }
+
+    </style>
+    <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+
+<script type='text/javascript'>//<![CDATA[ 
+$(window).load(function(){
+
+});//]]>  
+
+</script>
+
+
+</head>
+  <body data-spy="scroll" data-target="lookup-results" data-twttr-rendered="true">
+      <div class="container" style="border: solid thin black">
+        <div class="row">
+            <div class="span6 center" style="border: solid thin red">
+                <form class="form-horizontal" method="post" action="/form/">
+                    <fieldset>
+                        <legend>Please login</legend>
+                        <div class="control-group">
+                            <label class="control-label" for="id_username">Username</label>
+                            <div class="controls">
+                                <input name="username" maxlength="100" placeholder="Enter your username..." type="text" class="input-large" id="id_username" />
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" for="id_password">Password</label>
+                            <div class="controls">
+                                <input name="password" maxlength="100" placeholder="Enter your password..." type="password" class="input-large" id="id_password" />
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+  
+</body>
+
+
+</html>
+
